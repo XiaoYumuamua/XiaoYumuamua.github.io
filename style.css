@@ -1,0 +1,124 @@
+/* This file is used to style the website */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: MiSans, HarmonyOSHans; 
+    background-color: lemonchiffon;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: goldenrod;
+    height: 55px;
+    z-index: 1000; 
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.header-content p {
+    color: white; 
+    font-size: 18px; 
+    margin: 0 10px; 
+}
+
+.content {
+    margin-top: 65px;
+    margin-left: 20px; 
+    padding: 15px; 
+}
+
+.title {
+    text-align: right;
+    margin-right: 10px;
+}
+
+.subtitle {
+    text-align: left;
+    color: #448AFF;
+    font-size: 1.5rem; 
+}
+
+.message, .url {
+    font-size: 3rem; 
+    text-align: right;
+    margin-right: 10px;
+    border-radius: 10px;
+    padding: 5px; 
+}
+
+.message {
+    background-color: lightcyan;
+}
+
+.scroll-text {
+    background-color: rgb(209, 196, 255);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.url {
+    background-color: rgb(255, 238, 170);
+    min-height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    transition: transform 1s;
+    object-fit: cover;
+    width: 120px;
+    height: 120px;
+}
+
+.avatar:hover {
+    transform: scale(1.10) rotate(360deg);
+}
+
+details {
+    margin-left: 5px;
+}
+
+details p {
+    color: black;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+a {
+    color: #00C853;
+}
+
+a:visited {
+    color: #00C853;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 8px;
+    }
+
+    .header {
+        height: 50px;
+
+    .content {
+        margin-top: 50px;
+    }
+
+    }
+}
